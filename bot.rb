@@ -4,5 +4,8 @@ bot = Discordrb::Bot.new token: 'さっきメモったTokenをここに書く', 
 bot.command :hello do |event|
   event.respond 'おはこんばんじにちは!'
 end
+
+require 'uri'
+enc = URI.encode_www_form_component('Ruby リファレンスマニュアル')
  
 bot.run
